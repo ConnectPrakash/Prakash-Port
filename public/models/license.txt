@@ -1,0 +1,11 @@
+Model Information:
+* title:	Fountain Pen
+* source:	https://sketchfab.com/3d-models/fountain-pen-b4676e41c38a4348af933f1d00051afb
+* author:	gazgolder (https://sketchfab.com/gazgolder)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Fountain Pen" (https://sketchfab.com/3d-models/fountain-pen-b4676e41c38a4348af933f1d00051afb) by gazgolder (https://sketchfab.com/gazgolder) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

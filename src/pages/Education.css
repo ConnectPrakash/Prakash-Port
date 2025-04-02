@@ -1,0 +1,90 @@
+.education-container {
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    width: 80%;
+    margin-inline: 50px;
+  }
+  
+  .education-title {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-edu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .timeline-item-edu {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px #007bff;
+    animation: blink-shadow 1.5s infinite alternate;
+    width: 50%;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @keyframes blink-shadow {
+    from {
+      box-shadow: 0 0 10px #007bff;
+    }
+    to {
+      box-shadow: 0 0 20px #007bff;
+    }
+  }
+  
+  .timeline-item-edu.left {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+  
+  .timeline-item-edu.right {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-self: flex-end;
+  }
+  
+  .timeline-icon-edu {
+    font-size: 24px;
+    color: #007bff;
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translate(-50%, 0);
+    z-index: -1;
+    animation: icon-slide 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes icon-slide {
+    from {
+      top: -50px;
+      opacity: 0;
+    }
+    to {
+      top: 100%;
+      opacity: 1;
+    }
+  }
+  
+  .timeline-card-edu h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .institute, .duration, .description {
+    margin: 5px 0;
+    color: #555;
+  }

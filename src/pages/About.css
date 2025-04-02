@@ -1,0 +1,137 @@
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  text-align: justify;
+  transform-origin: center;
+  animation: fadeIn 1s ease-in-out; /* Apply the fade-in animation */
+}
+
+/* Title with slight transition effect */
+.about-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #004a99;
+  margin-block: 40px;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.about-title:hover {
+  color: #007bff; /* Subtle hover color change */
+}
+
+.about-text, .extra-content {
+  color: white;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Button Hover Effect */
+.contact-button {
+  margin-top: 16px;
+  padding: 10px 24px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Button Click Effect */
+.contact-button:active {
+  transform: scale(0.95);
+}
+
+/* Skills Section */
+.about-page .skills-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Card Hover Animation */
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.about-page .skills {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px #0000001a;
+  width: 300px;
+  text-align: center;
+  border: 1px solid #007bff;
+  transition: all 0.3s ease-in-out;
+  animation: popIn 0.8s ease-out;
+}
+
+.about-page .skills:hover {
+  background-color: #007bff;
+  border: 1px solid white;
+  transform: scale(1.05); /* Zoom-in effect */
+}
+
+.about-page .skills:hover h3 {
+  color: white;
+}
+
+.about-page .skills h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.about-page .skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-page .skills li {
+  font-size: 1rem;
+  color: white;
+  margin: 18px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.about-page .skills:hover li {
+  color: #fff;
+}

@@ -1,0 +1,119 @@
+@media (max-width:1024px) {
+    header{
+        display: block !important;
+    }
+    .home-button {
+        width: 100% !important; 
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .home-button button {
+        margin-right: 30px !important;
+        margin-left: 0px !important;
+    }
+
+.experience-container .timeline-box:nth-child(odd) {
+     left: 0px !important;
+}
+.experience-container .timeline-box:nth-child(even) {
+    left: 50% !important;
+}
+.experience-container .timeline {
+   position: relative !important; 
+}
+.Sidebar {
+    padding-left: 0px;
+   padding-top: 0px !important;
+   height: 100vh !important;
+}
+}
+
+@media (max-width:768px) {
+    header{
+        width: 100% !important;
+        padding:0px !important
+    }
+    .home{
+        padding:0px !important;
+        margin: 0px !important;
+    }
+    .file-upload label {
+        width: 100% !important;
+    }
+    .file-upload label input{
+        width: 50%;
+    }
+    .home{
+        width: 100%;
+    }
+    .Sidebar {
+        width: 100% !important;
+        padding-left:0px !important;
+    }
+    .d-flex {
+        display: block !important;
+    }
+    .experience-container .timeline-box {
+        position: relative;
+        width: 90% !important;
+    }
+    .experience-container .timeline-box:nth-child(even) {
+        left: 0px !important;
+    }
+    .timeline-box:nth-child(odd) .timeline-icon {
+        display: none;
+    }
+    .Sidebar-content {
+        width: 100%;
+        display: flex;
+     flex-direction: row !important;
+    }
+    .Sidebar{
+        height: 20vh !important;
+    }
+    .Sidebar-content a {
+        padding: 6px 7px !important;
+    }
+    .Sidebar-content a h3{
+        display: none;
+    }
+    .Sidebar:hover .block {
+        opacity: 0;
+        display: none !important;
+        transform: translateX(0);
+    }
+    .contact-form {
+         padding: 0px !important;
+    }
+    .input-field, .textarea-field {
+        width: 94% !important;
+    }
+    .file-upload label input {
+        width: 50%;
+        display: none;
+    }
+    .send-button {
+        width: 94% !important;
+    }
+}
+@media (max-width:376px) {
+    .home-profile-img {
+        width: 250px !important;
+        height: 240px !important;
+    }
+    .contact-button {
+        margin: 30px auto !important;
+    }
+    .skills-row {
+        display: grid !important;
+        grid-template-columns: auto auto !important ;
+    }
+    .contact-container {
+      
+         padding: 0px !important;
+    }
+    .Sidebar-content {
+        width: 100% !important;
+    }
+}

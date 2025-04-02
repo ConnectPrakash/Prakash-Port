@@ -1,0 +1,19 @@
+/* *,::before,::after{
+    outline:1px solid red;
+} */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: "Plus Jakarta Sans", serif;
+}
+.d-flex{
+    display: flex;
+}
+.portfolio-body{
+    width: 100%;
+    overflow: auto;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.886)
+}

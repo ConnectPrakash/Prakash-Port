@@ -1,0 +1,247 @@
+.home{
+    text-align: center;
+    margin:20px;
+    padding: 50px;
+    position: relative;
+  
+
+}
+header {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 20px 50px; /* Adjust padding instead of margin */
+    gap: 50px; /* Reduce gap if needed */
+    justify-content: space-between; /* Ensures elements are well spaced */
+}
+.home-div{
+    flex: 7;
+}
+
+/* .home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 167, 69, 0.8);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.home:hover::before {
+    transform: scaleX(1);
+} */
+.home-img {
+   width: 42px;
+   height: 42px;
+   margin-inline: 20px;
+   margin-top: 30px;
+   margin-left: 5px;
+   
+}
+.home h2{
+
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-block: 1rem;
+    color:white;
+}
+.home .name{
+    color:#007bff
+}
+.home span{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #b0cff1;
+}
+.home-profile-img {
+    width: 360px;
+    height: 450px;
+    border-radius: 50%;
+    border: 5px solid #0056b3;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    display: flex;
+    margin: auto !important;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home-profile-img img{
+    width: 100%;
+    height:100%;
+    border-radius: 50%; 
+    object-fit: cover;  
+}
+.short-instruction{
+    padding:20px;
+    border-radius: 1rem;
+    line-height: 45px;
+  
+}
+.intro {
+    font-family: "Josefin Sans", serif;
+    height:200px;
+    margin-top: 80px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    text-align: justify;
+ 
+    background: rgba(255, 255, 255, 0.15); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: rgb(13, 12, 12);
+    animation: fadeInUp 1s ease-in-out;
+    position: relative;
+    display: inline-block;
+}
+.intro h2{
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.5;
+
+}
+.home-div-tran{
+    justify-content: center !important;
+}
+.cursor {
+    font-weight: bold;
+    color: white;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home h2, .home .name, .home span {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.home-button{
+    width: 100%;
+}
+.home-button button{
+     cursor: pointer;
+    padding:12px 18px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 50px;
+     margin-left: 150px;
+     color: white;
+     margin-block: 2rem;
+}
+
+.home {
+    text-align: center;
+    padding: 50px;
+}
+
+.home-img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+/* 
+.short-instruction {
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px black;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    line-height: 45px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.cursor {
+    font-weight: bold;
+    color: black;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+.home-links {
+    margin-block: 20px;
+    animation: fadeInUp 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.link {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    
+}
+.link:hover{
+ scale: 1.2;
+}
+.link i{
+    margin-right: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+.home-button {
+    margin-top: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}

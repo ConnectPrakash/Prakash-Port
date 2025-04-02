@@ -1,0 +1,166 @@
+.Sidebar {
+    min-width: 50px;
+    width: 290px;
+    background-color: rgb(6, 5, 5);
+    height: 90vh;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    gap: 20px;
+}
+
+    .Sidebar:hover {
+        width: 320px; /* Slightly expand on hover */
+        transition: width 0.4s ease-in-out;
+    }
+
+.Sidebar-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.Sidebar-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.Sidebar-content {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.Sidebar-content:hover {
+
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.Sidebar-content:hover {
+    animation: bounce 0.5s ease-in-out;
+}
+
+.Sidebar-content a {
+    text-decoration: none;
+    color: white;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding:23px;
+}
+.Sidebar-content a:hover{
+    background-color: #007bff;
+    border-radius: 1rem;
+    font-size: large;
+}
+
+.fa-solid {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: #007bff;
+
+}
+
+/* Initially hide the block */
+.block {
+    display: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Show the block with animation when hovering over Sidebar-content */
+.Sidebar-content:hover .block {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+.Sidebar-content:hover .fa-solid{
+    color: white !important;
+}
+.Sidebar {
+    min-width: 60px;
+    width: 300px;
+    background-color: rgb(6, 5, 5);
+    height: 94vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 15px;
+    padding-left: 20px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Expand on hover smoothly */
+.Sidebar:hover {
+    width: 320px;
+}
+
+/* Sidebar Links */
+.Sidebar-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Sidebar-content a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.Sidebar-content a:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+/* Icons */
+.fa-solid {
+    font-size: 1.8rem;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Change icon color on hover */
+.Sidebar-content a:hover .fa-solid {
+    color: white;
+}
+
+/* Sidebar Text */
+.block {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+/* Show text smoothly when hovered */
+.Sidebar:hover .block {
+    opacity: 1;
+    transform: translateX(0);
+}
