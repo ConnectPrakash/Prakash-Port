@@ -69,7 +69,9 @@ header {
     align-items: center;
     justify-content: center;
 }
-
+.TextTransition{
+    display: block !important;
+}
 
 .home-profile-img img{
     width: 100%;

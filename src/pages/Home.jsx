@@ -31,6 +31,18 @@ function Home() {
     (prev) => (prev + 1) % roles.length,
     0
   );
+
+
+  const onHandleHire = () => {
+    const contactSection = document.getElementById("contact");
+    contactSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const onViewProjects = () => {
+    const projectSection = document.getElementById("projects");
+    projectSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   
   return (
     <div>
@@ -41,7 +53,7 @@ function Home() {
               Hi <img className="home-img" src={wave} alt="Waving hand icon" /> I'm <span className="name">Prakash</span> 
             </h2>
             <span className='home-div-tran'>
-  <TextTransition springConfig={presets.wobbly}>
+  <TextTransition springConfig={presets.wobbly} className='TextTransition'>
     {roles[animationIndex]}
   </TextTransition>
 </span>
@@ -66,19 +78,22 @@ function Home() {
         </div>
 
         <div className="home-button">
-          <button className="hire">Hire Me!</button>
-          <button className="download">My Resume</button>
-          <button className="project">View Projects</button>
+          <button className="hire" onClick={onHandleHire}>Hire Me!</button>
+          <a href="https://drive.google.com/file/d/1humXzN6BEzVATGbBwbZh9rB7wQXvrAL-/view" target="_blank" rel="noreferrer">
+            <button className="download">My Resume</button>
+          </a>
+          <button className="project" onClick={onViewProjects}>View Projects</button>
         </div>
+    
       </div>
 
       <div className='about'>
         <About />
         <Education />
         <Skills />
-        <Project />
+        <div id="projects"><Project /></div>
         <WorkExperience />
-        <ContactMe />
+        <div id="contact"><ContactMe /></div>
       </div>
     </div>
   );
