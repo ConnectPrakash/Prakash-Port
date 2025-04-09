@@ -8,7 +8,7 @@ const projects = [
     description: "A local storage-based web app for tracking items.",
     techStack: ["JavaScript", "Bootstrap", "LocalStorage"],
     liveLink: "https://67f5ff255f56580e054986db--mellow-biscochitos-17f037.netlify.app/", // Replace with your actual link
-    githubLink: "#",
+    githubLink: "https://github.com/ConnectPrakash/SquashApp-Ecommerce",
     image: "/images/phone.jpg", // Replace with your actual image path
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     description: "A Jira-like task management tool for university students.",
     techStack: ["MERN Stack", "Redux", "Tailwind CSS"],
     liveLink: "https://67f4e9fd58ac9b00a764050f--helpful-gumdrop-4e4633.netlify.app/",
-    githubLink: "#",
+    githubLink: "https://github.com/ConnectPrakash/Task-Management/tree/frontend8",
     image: "/images/task.jpg",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     description: "An online food ordering system with a responsive UI.",
     techStack: ["React", "Node.js", "MongoDB"],
     liveLink: "https://musical-hotteok-6e71dd.netlify.app/",
-    githubLink: "#",
+    githubLink: "https://github.com/ConnectPrakash/book-store",
     image: "/images/bookstore.jpeg",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     description: "An online food ordering system with a responsive UI.",
     techStack: ["React","Node js","Mongo DB","Socket io"],
     liveLink: "https://genuine-froyo-89694d.netlify.app/",
-    githubLink: "#",
+    githubLink: "https://github.com/ConnectPrakash/Chat-Application",
     image: "/images/snap1.jpg",
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     description: "An AI-powered travel planner that generates personalized trip itineraries based on user preferences such as destination, budget, and travel companions.",
     techStack: ["React", "Socket.io", "OpenAI", "Firebase"],
     liveLink: "https://67f60d5860c15f22dd3a4fb8--hilarious-fox-679330.netlify.app/",
-    githubLink: "#",
+    githubLink: "https://github.com/ConnectPrakash/Ai-Travel-planner/tree/frontend",
     image: "/images/Travel.jpg"
   }
 
